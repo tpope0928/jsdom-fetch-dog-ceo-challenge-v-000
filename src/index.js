@@ -23,7 +23,7 @@ function loadImgs() {
     container.appendChild(newDogImg);
   }
 
-function loadBreedOptions() { 
+function loadBreedOptions() {
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
   fetch(breedUrl)
   .then(res => res.json())
@@ -33,4 +33,3 @@ function loadBreedOptions() {
     addBreedSelectListener();
   });
 }
-
