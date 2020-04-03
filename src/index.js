@@ -3,7 +3,7 @@ let breeds = [];
 document.addEventListener('DOMContentLoaded', function() {
   loadImgs();
   loadBreedOptions();
-}); 
+});
 
 
 function loadImgs() {
@@ -12,7 +12,7 @@ function loadImgs() {
     .then(res => res.json())
     .then(results => {
       results.message.forEach(image => addImg(image))
-    });  
+    });
   }
 
 
