@@ -67,3 +67,7 @@ function addBreed(breed) {
   ul.appendChild(li);
   li.addEventListener('click', colorChoice);
 }
+
+function colorChoice(event) {
+  event.target.style.color = 'green'
+}
