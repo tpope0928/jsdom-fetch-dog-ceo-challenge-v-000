@@ -22,3 +22,15 @@ function loadImgs() {
     newDogImg.src = dogImg;
     container.appendChild(newDogImg);
   }
+
+function loadBreedOptions() { 
+  const breedUrl = 'https://dog.ceo/api/breeds/list/all'
+  fetch(breedUrl)
+  .then(res => res.json())
+  .then(results => {
+    breeds = Object.keys(results.message);
+    updateBreedList(breeds);
+    addBreedSelectListener();
+  });
+}
+
