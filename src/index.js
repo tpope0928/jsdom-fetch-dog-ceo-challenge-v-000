@@ -39,11 +39,3 @@ function updateBreedList(breeds) {
   removeChildren(ul);
   breeds.forEach(breed => addBreed(breed));
 }
-
-function removeChildren(element) {
-  let child = element.lastElementChild;
-  while (child) {
-    element.removeChild(child);
-    child = element.lastElementChild;
-  }
-}
