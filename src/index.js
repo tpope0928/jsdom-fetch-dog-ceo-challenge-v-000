@@ -68,6 +68,6 @@ function addBreed(breed) {
   li.addEventListener('click', colorChoice);
 }
 
-//function colorChoice(event) {
-//  event.target.style.color = 'green'
-//}
+function colorChoice(event) {
+  event.target.style.color = 'green'
+}
